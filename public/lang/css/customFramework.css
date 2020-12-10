@@ -1,0 +1,181 @@
+/* start fonts */
+.quicksand-font{
+	font-family: 'Quicksand', sans-serif;
+}
+
+/* end fonts */
+
+/* start bg color */
+
+.erpbg-primary{
+  background-color: #7460EE;
+}
+
+.erpbg-secondary{
+  background-color: #545B62;
+}
+
+.erpbg-success{
+  background-color: #06D79C;
+}
+
+.erpbg-danger{
+  background-color: #EF5350;
+}
+
+.erpbg-warning{
+  background-color: #FFF0D5;
+}
+
+.erpbg-info{
+  background-color: #D7E8FD;
+}
+
+.erpbg-light{
+  background-color: #FBFBFC;
+}
+
+.erpbg-dark{
+  background-color: #D4D6D7;
+}
+
+.erpbg-pink{
+  background-color: #fc007a;
+}
+
+.erpbg-navy{
+  background-color: #00092B;
+}
+
+/* end bg color */
+
+/* start txt color */
+
+.erptxt-primary{
+  color: #7460EE;
+}
+
+.erptxt-secondary{
+  color: #545B62;
+}
+
+.erptxt-success{
+  color: #06D79C;
+}
+
+.erptxt-danger{
+  color: #EF5350;
+}
+
+.erptxt-warning{
+  color: #FFF0D5;
+}
+
+.erptxt-info{
+  color: #D7E8FD;
+}
+
+.erptxt-light{
+  color: #FBFBFC;
+}
+
+.erptxt-dark{
+  color: #D4D6D7;
+}
+
+.erptxt-pink{
+  background-color: #fc007a;
+}
+
+.erptxt-navy{
+  color: #00092B;
+}
+
+/* end txt color */
+
+/* start full page loader */
+	.fullpage-loader{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 10000;
+		background-color:rgba(0,0,0,0.8);
+	}
+
+.lds-ripple {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+/* end full page loader */
+
+/* ajax before send loader */
+.loader{
+    width: 60px;
+    height: 60px;
+    margin: 50px auto;
+    border: 15px solid #3c40c6;
+    border-top: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 25px 2px #3c40c6;
+    position: relative;
+    animation: animate 1s linear infinite normal;
+}
+.loader:before{
+    content: " ";
+    width: 25px;
+    height: 25px;
+    border: 10px solid #3c40c6;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@keyframes animate{
+    0%{
+        opacity: 0.2;
+        transform: rotate(0deg);
+    }
+    50%{
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+    100%{
+        opacity: 0.2;
+        transform: rotate(360deg);
+    }
+}
